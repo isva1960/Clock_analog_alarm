@@ -1,0 +1,9 @@
+{'name': 'ддд', 'type': 0, 'period': 'x', 'date': datetime.date(2000, 1, 1), 'time': datetime.time(8, 25), 'activate': 1, 'sound': 'C:/Users/Professional/OneDrive/Документы/python/Qt_Designer/Clock_analog_alarm/Sound/Облака белокрылые лошадки.mp3'}
+{'name': 'Утренняя таблетка', 'type': 0, 'period': 'x', 'date': datetime.date(2000, 1, 1), 'time': datetime.time(9, 15), 'activate': 1, 'sound': 'C:/Users/Professional/OneDrive/Документы/python/Qt_Designer/Clock_analog_alarm/Sound/Облака белокрылые лошадки.mp3'}
+{'name': 'Будильник2', 'type': 0, 'period': 'x', 'date': datetime.date(2000, 1, 1), 'time': datetime.time(17, 56), 'activate': 1, 'sound': ''}
+{'name': 'Будильник7', 'type': 0, 'period': 'x', 'date': datetime.date(2000, 1, 1), 'time': datetime.time(18, 12), 'activate': 1, 'sound': ''}
+{'name': 'Будильник1', 'type': 1, 'period': '0000001', 'date': datetime.date(2000, 1, 1), 'time': datetime.time(19, 7), 'activate': 1, 'sound': 'C:/Users/Professional/OneDrive/Документы/python/Qt_Designer/Clock_analog_alarm/Sound/Облака белокрылые лошадки.mp3'}
+{'name': 'Вечерняя таблетка', 'type': 0, 'period': 'x', 'date': datetime.date(2000, 1, 1), 'time': datetime.time(21, 20), 'activate': 1, 'sound': 'C:/Users/Professional/OneDrive/Документы/python/Qt_Designer/Clock_analog_alarm/Sound/Облака белокрылые лошадки.mp3'}
+{'name': 'Пора спать', 'type': 1, 'period': '1000000', 'date': datetime.date(2000, 1, 1), 'time': datetime.time(22, 0), 'activate': 1, 'sound': ''}
+{'name': 'd1', 'type': 2, 'period': 'x', 'date': datetime.date(2024, 2, 2), 'time': datetime.time(10, 47), 'activate': 0, 'sound': ''}
+{'name': 'тест', 'type': 2, 'period': 'x', 'date': datetime.date(2024, 6, 13), 'time': datetime.time(15, 00), 'activate': 1, 'sound': 'C:/Users/Professional/OneDrive/Документы/python/Qt_Designer/Clock_analog_alarm/Sound/Облака белокрылые лошадки.mp3'}
