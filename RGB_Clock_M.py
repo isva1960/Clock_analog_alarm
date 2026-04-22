@@ -1,7 +1,7 @@
 from RGB_Clock import Ui_Rgb_Clock
 import sys
-from PyQt5 import QtWidgets, Qt , QtGui
-from PyQt5.QtWidgets import  QMessageBox
+from PyQt5 import QtWidgets, Qt, QtGui
+from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtCore import QSettings
 
 ORGANIZATION_NAME = "isva_company"
@@ -40,7 +40,7 @@ class RGB_Window(QtWidgets.QMainWindow, Ui_Rgb_Clock):  # Создаем сво�
             self.mainw.clock.type_clock = 0
         else:
             self.mainw.clock.type_clock = 1
-        self.mainw.clock.chng_type_clock()
+        self.mainw.clock.change_type_clock()
         self.mainw.clock.update()
 
     def canc_color(self):
@@ -58,7 +58,7 @@ class RGB_Window(QtWidgets.QMainWindow, Ui_Rgb_Clock):  # Создаем сво�
             slider.valueChanged.connect(self.chng_color)
             val = "self.Lblv_" + xx_c + ".setText(str(slider.value()))"
             eval(val)
-        size = self.mainw.clock.chng_type_clock()
+        size = self.mainw.clock.change_type_clock()
         if size == 0:
             self.radioB_bsize.setChecked(True)
             self.radioB_ssize.setChecked(False)
@@ -77,7 +77,7 @@ class RGB_Window(QtWidgets.QMainWindow, Ui_Rgb_Clock):  # Создаем сво�
         iconw.addPixmap(QtGui.QPixmap(":/question_115172.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         msgbox.setWindowIcon(iconw)
         msgbox.addButton('Да', QtWidgets.QMessageBox.YesRole)
-        bt_no=msgbox.addButton('Нет', QtWidgets.QMessageBox.NoRole)
+        bt_no = msgbox.addButton('Нет', QtWidgets.QMessageBox.NoRole)
         msgbox.setDefaultButton(bt_no)
         result = msgbox.exec_()
         if result == 0:
@@ -93,10 +93,9 @@ class RGB_Window(QtWidgets.QMainWindow, Ui_Rgb_Clock):  # Создаем сво�
         xx_c = slider.objectName()[6:]
         val = "self.Lblv_" + xx_c + ".setText(str(slider.value()))"
         eval(val)
-        self.mainw.clock.dic_colors[xx_c]=slider.value()
-        self.mainw.clock.chng_color_clock()
+        self.mainw.clock.dic_colors[xx_c] = slider.value()
+        self.mainw.clock.change_color_clock()
         self.mainw.clock.update()
-
 
     def run_save(self):
         for slider in self.findChildren(Qt.QSlider):
